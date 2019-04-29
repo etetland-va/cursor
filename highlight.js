@@ -14,21 +14,19 @@ document.body.setAttribute('onmousemove', "" +
         "highlight.style.background='#111';" +
         "document.body.appendChild(highlight);" +
     "} else { " +
-        "elem.style.left = window.scrollX + event.clientX - elem.getBoundingClientRect().width / 2 + 'px';" +
-        "elem.style.top = window.scrollY + event.clientY - elem.getBoundingClientRect().height / 2 + 'px';" +
+        "elem.style.left = window.scrollX + event.clientX - 15 + 'px';" +
+        "elem.style.top = window.scrollY + event.clientY - 15 + 'px';" +
     "}");
 document.body.setAttribute('onmousedown', "" +
     "var elem = document.getElementById('highlight'); " +
     "if (elem) { " +
         "elem.style.background='red'; " + 
-        "elem.style.width='40px'; " + 
-        "elem.style.height='40px'; " + 
-        "elem.style.opacity='1';" +
-        "elem.style.transition='background 0.2s, width 0.2s, height 0.2s, opacity 0.2s';" + 
-        "setTimeout(function(){ " + 
-            "elem.style.background='black'; " + 
-            "elem.style.width='30px'; " + 
-            "elem.style.height='30px'; " + 
-            "elem.style.opacity='0.5';" +
-        "}, 200);" +
+        "elem.style.opacity='0.75';" +
+        "elem.style.transition='background 0.2s, opacity 0.2s';" + 
     "}");
+document.body.setAttribute('onmouseup', "" +
+    "var elem = document.getElementById('highlight'); " +
+    "if (elem) { " +
+            "elem.style.background='black'; " + 
+            "elem.style.opacity='0.5';" +
+        "}");
