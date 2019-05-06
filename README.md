@@ -12,7 +12,3 @@ Usage: run this javascript on the page you want it to run on. There are a few wa
 
 #### Console
 Open the script console and copy/paste the entire contents of `highlight.js` and run it in the console
-
-## Known Issues
-- some websites have security restrictions that disable inline scripts
-    - this might be fixable in the chrome extension
