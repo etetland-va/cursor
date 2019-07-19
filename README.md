@@ -5,8 +5,7 @@ Usage: run this javascript on the page you want it to run on. There are a few wa
 
 #### Bookmarklet
     Make a bookmark
-        choose your own name, and the value should be javascript:<code>
-          (the <code> is the entire contents of `highlight.js`)
+        choose your own name, and the value should be the entire contents of `bookmarklet.txt`
         
 #### Chrome extension
     [link](https://chrome.google.com/webstore/detail/highlightvendasta/plnceibkefdpcpipgdbimlkcocjgdhjn/related)
